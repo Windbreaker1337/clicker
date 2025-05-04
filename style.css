@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    
+}
+
+.clicks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.quanity { 
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 125px;
+}
+
+button {
+    margin: 10px;
+    font-size: 16px;
+    width: 100%;
+    height: 30px;
+    color: white;
+    background: linear-gradient(135deg, #8e2de2, #4a00e0);
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(74, 0, 224, 0.5), 0 0 20px rgba(142, 45, 226, 0.3);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+button::after { 
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 30px;
+    background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+button:hover { 
+    box-shadow: 0 0 15px rgba(74, 0, 224, 0.8), 0 0 30px rgba(142, 45, 226, 0.6);
+    transform: scale(1.05);
+}
+
+button:hover::after{ 
+    opacity: 1;
+}
