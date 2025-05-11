@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-    //this code don't work
+    //this code work incorrect
     // let count = parseInt(localStorage.getItem('clickCount')) || 0;
     // const savedAchievements = JSON.parse(localStorage.getItem('achievements')) || [];
 
